@@ -1,41 +1,64 @@
-body{
-  background-color:#CCCCFF;
-}
-
 .profilePic {
     width: 20%;
     border-radius: 15%;
 }
 
 @keyframes springy-text {
-0%   {
-  letter-spacing: 1.2em;
-  color: white;
-  }
-100%   {
-  letter-spacing: 0.1em;
-  color: #A31212;
-  }
+    0% {
+        letter-spacing: 1.2em;
+        color: white;
+    }
+
+    100% {
+        letter-spacing: 0.1em;
+        color: #A31212;
+    }
 }
 
 .myName {
-    color:#A31212;
+    color: #A31212;
     animation-name: springy-text;
     animation-duration: 1s;
     animation-timing-function: ease;
     animation-delay: 0s;
-    animation-iteration-count:1;
+    animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: forwards;
 }
 
 
 .scrollProjects {
-    width: 10%;
-    height: 70%;
+    height:400px;
+    width: 40%;
     margin: 0px auto;
     padding: 50px;
     background-color: #D9F7FF;
     border: 5px solid black;
     overflow-y: scroll;
+}
+
+.thumbnailC,
+.thumbnailA,
+.thumbnailB {
+    height: 150px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: inline;
+    color: white;
+    justify-content: center;
+}
+
+#column {
+    background-color: yellow;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.caption {
+    font-size: 20px;
+    color: white;
+    text-shadow: 4px 4px 4px black;
 }
