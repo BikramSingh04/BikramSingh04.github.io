@@ -7,6 +7,11 @@ div {
     background: #CCCCFF;
 }
 
+.profilePic {
+    width: 20%;
+    border-radius: 15%;
+}
+
 @keyframes springy-text {
     0% {
         letter-spacing: 1.2em;
