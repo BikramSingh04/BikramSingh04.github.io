@@ -1,34 +1,78 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Prof</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+        <title>Practice Grid Layout and Flexbox</title>
+        <style>
+            body {
+                display: grid;
+                grid-template-areas:
+                    "header header header"
+                    "nav article ads"
+                    "footer footer footer";
+                grid-template-rows: 5em 1fr 5em;
+                grid-template-columns: 30% 40% 30%;
+                grid-gap: 10px;
+                height: 60em;
+                margin: 0;
+            }
+
+            #pageHeader {
+                grid-area: header;
+            }
+
+            #pageFooter {
+                grid-area: footer;
+            }
+
+            #mainArticle {
+                grid-area: article;
+            }
+
+            #mainNav {
+                grid-area: nav;
+            }
+
+            #siteAds {
+                grid-area: ads;
+            }
+        </style>
     <body>
-        <h1 class="myName">Bikram Singh</h1>
-        <img class="profilePic" src="BikramSinghprof.jpeg">
-        <h3 class="projectSub">Projects</h3>
-        <br>
-        <div class="scrollProjects">
-            <div id="column" class="gallery">
-                <div class="galleryA">
-                    <img class="thumbnailA" src="PhotoGallery.png">
-                    <p class="caption"><a href="https://BikramSingh04.github.io/Photo-Gallery-Unit-9-Finished" target="_blank"> Photo Gallery </a></p>
+        <header id="pageHeader">
+            <h1 class="myName">Bikram Singh</h1>
+        </header>
+        <article id="mainArticle">
+            <h3 class="comProjectSub">Completed Projects</h3>
+            <div class="scrollProjects">
+                <div id="column" class="gallery">
+                    <div class="galleryA">
+                        <img class="thumbnailA" src="PhotoGallery.png">
+                        <p class="caption"><a href="https://BikramSingh04.github.io/Photo-Gallery-Unit-9-Finished" target="_blank"> Photo Gallery </a></p>
+                    </div>
 
-                </div>
-                <div class="galleryB">
-                    <img class="thumbnailB" src="Kingdom_of_Liones.png">
-                    <p class="caption"><a href="https://BikramSingh04.github.io/Character-Quiz" target="_blank"> Character Quiz </a></p>
-                </div>
+                    <div class="galleryB">
+                        <img class="thumbnailB" src="Kingdom_of_Liones.png">
+                        <p class="caption"><a href="https://BikramSingh04.github.io/Character-Quiz" target="_blank"> Character Quiz </a></p>
+                    </div>
 
-                <div class="galleryC">
-                    <img class="thumbnailC" src="AdventureProject.png">
-                    <p class="caption"><a href="https://BikramSingh04.github.io/Adventure-project" target="_blank"> Adventure Project </a></p>
-                </div>
+                    <div class="galleryC">
+                        <img class="thumbnailC" src="AdventureProject.png">
+                        <p class="caption"><a href="https://BikramSingh04.github.io/Adventure-project" target="_blank"> Adventure Project </a></p>
+                    </div>
 
-                <div>
                 </div>
             </div>
+        </article>
+        <nav id="mainNav"><img class="profilePic" src="BikramSinghprof.jpeg">
+            I am currently attending Thomas A. Edison CTE High School as a 12th grade Web Design student.
+        </nav>
+        <div id="siteAds">
+            <h3 class="upProjectSub">Upcoming Projects</h3>
+            <div class="scrollProjects">
+            </div>
         </div>
+        <footer id="pageFooter">
+            <h2 class="contact">Contact: https://www.linkedin.com/in/bikram-singh-04 || bikram.6104@gmail.com</h2>
+        </footer>
     </body>
+    </head>
 </html>
