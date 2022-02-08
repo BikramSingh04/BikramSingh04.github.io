@@ -1,15 +1,10 @@
-body {
-    background-color:#CCCCFF;
-}
-
-.profilePic {
-    width: 20%;
-    border-radius: 15%;
-}
-.projectSub {
-    text-align:center;
-    font-size:25px;
-    
+header,
+footer,
+article,
+nav,
+div {
+    padding: 20px;
+    background: #CCCCFF;
 }
 
 @keyframes springy-text {
@@ -35,9 +30,15 @@ body {
     animation-fill-mode: forwards;
 }
 
+.comProjectSub,
+.upProjectSub {
+    text-align: center;
+    font-size: 25px;
+
+}
 
 .scrollProjects {
-    height:400px;
+    height: 400px;
     width: 40%;
     margin: 0px auto;
     padding: 50px;
