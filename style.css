@@ -1,6 +1,15 @@
+body {
+    background-color:#CCCCFF;
+}
+
 .profilePic {
     width: 20%;
     border-radius: 15%;
+}
+.projectSub {
+    text-align:center;
+    font-size:25px;
+    
 }
 
 @keyframes springy-text {
@@ -49,7 +58,7 @@
 }
 
 #column {
-    background-color: yellow;
+    background-color: #FFB0C6;
     justify-content: center;
     flex-direction: column;
     padding: 10px;
