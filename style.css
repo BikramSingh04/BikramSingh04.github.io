@@ -55,7 +55,8 @@ nav {
 
 .thumbnailC,
 .thumbnailA,
-.thumbnailB {
+.thumbnailB,
+.thumbnailD {
     height: 150px;
     padding-top: 20px;
     padding-bottom: 10px;
